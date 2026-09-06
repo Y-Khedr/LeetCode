@@ -8,9 +8,8 @@ class Solution {
         for(int i=0; i<n; i++){
             int solution = target - nums[i];
             if(map.containsKey(solution))
-                return new int[]{map.get(solution), i};
+                return new int[]{ map.get(solution), i};
             map.put(nums[i],i);
-
         }
         return new int[]{};
     }
