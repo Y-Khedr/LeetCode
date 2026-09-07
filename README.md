@@ -1,5 +1,5 @@
 # LeetCode
-<!---LeetCode Topics Start-->
+![LeetCode Stats](https://leetcode-stats-card.vercel.app/get?username=52rLaIxmG5&theme=dark)
 # LeetCode Topics
 ## Array
 |  |
