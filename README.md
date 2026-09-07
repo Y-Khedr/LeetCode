@@ -2,7 +2,7 @@
 
 ## LeetCode Profile & Activity
 
-[![LeetCode Profile](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/52rLalxmG5/)
+[![LeetCode Profile](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/52rLaIxmG5/)
 ![Language](https://img.shields.io/badge/Language-Java-007396?style=for-the-badge&logo=java&logoColor=white)
 ![Sync](https://img.shields.io/badge/Sync-LeetHub%20v2-black?style=for-the-badge&logo=github&logoColor=white)
 
