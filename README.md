@@ -8,7 +8,10 @@
 
 <br/>
 
-![LeetCode Stats](https://leetcode-stats-three.vercel.app/api?username=52rLaIxmG5&theme=dark)
+![Solved](https://img.shields.io/badge/Solved-7%20Problems-brightgreen?style=flat-square&logo=leetcode)
+![Easy](https://img.shields.io/badge/Easy-4-green?style=flat-square)
+![Medium](https://img.shields.io/badge/Medium-3-orange?style=flat-square)
+![Hard](https://img.shields.io/badge/Hard-0-red?style=flat-square)
 
 ---
 # LeetCode Topics
