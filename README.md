@@ -8,8 +8,7 @@
 
 <br/>
 
-<img src="https://leetcode-badge.vercel.app/api/users/52rLalxmG5" alt="LeetCode Stats" width="400" />
-
+![LeetCode Stats](https://leetcode-stats-card.vercel.app/get?username=52rLalxmG5&theme=dark)
 ---
 # LeetCode Topics
 ## Array
