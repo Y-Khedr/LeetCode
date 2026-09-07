@@ -6,10 +6,6 @@
 ![Language](https://img.shields.io/badge/Language-Java-007396?style=for-the-badge&logo=java&logoColor=white)
 ![Sync](https://img.shields.io/badge/Sync-LeetHub%20v2-black?style=for-the-badge&logo=github&logoColor=white)
 
-<br/>
-
-<img src="https://leetcode-stats-card.vercel.app/get?username=52rLalxmG5&theme=dark" alt="LeetCode Stats" width="400" />
-
 ---
 # LeetCode Topics
 ## Array
