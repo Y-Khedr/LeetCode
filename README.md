@@ -4,7 +4,7 @@
 [![LeetCode Profile](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/52rLalxmG5/)
 [![Language](https://img.shields.io/badge/Language-Java-007396?style=for-the-badge&logo=java&logoColor=white)](https://github.com/Y-Khedr/LeetCode)
 [![Sync Engine](https://img.shields.io/badge/Sync-LeetHub_v2-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/QasimWani/LeetHub-v2)
-
+<img src="https://leetcode-stats-three.vercel.app/api?username=YOUR_LEETCODE_USERNAME&theme=dark" alt="LeetCode Stats" />
 ---
 # LeetCode Topics
 ## Array
