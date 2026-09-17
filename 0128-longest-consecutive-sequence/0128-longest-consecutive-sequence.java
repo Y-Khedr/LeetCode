@@ -5,20 +5,17 @@ class Solution {
         Set<Integer> set = new HashSet<>();
         for(int num: nums)
             set.add(num);
-
-        int max = 0;
-
-        for(int x: set){
+        int run = 0;
+        for(int x:set){
             if(!set.contains(x-1)){
-                int curr = 1;
-                while(set.contains(x+curr)){
-                    curr++;
-                }
-                if(curr>max)
-                    max = curr;
+                int count = 1;
+                while(set.contains(x + count))
+                    count++;
+            if(count > run)
+                run = count;
             }
-        }
-        return max;
 
+        }
+        return run;
     }
 }
