@@ -2,18 +2,21 @@ import java.util.*;
 
 class Solution {
     public boolean isPalindrome(String s) {
-        StringBuilder res = new StringBuilder();
+        int left = 0;
+        int right = s.length() - 1;
         s = s.toLowerCase();
+        while(left<right){
 
-        for(int i=0; i<s.length(); i++){
-            char c = s.charAt(i);
-            if(Character.isDigit(c) || Character.isLetter(c))
-                res.append(c);
-        }
-        int n = res.length();
-        for(int i=0; i<n; i++)
-            if(res.charAt(i) != res.charAt(n-1 -i))
+            while(left<right && !Character.isLetterOrDigit(s.charAt(left)))
+                left++;
+
+            while(left<right && !Character.isLetterOrDigit(s.charAt(right)))
+                right--;
+            if(s.charAt(right) != s.charAt(left))
                 return false;
+            left++;
+            right--;
+        }
         return true;
     }
 }
