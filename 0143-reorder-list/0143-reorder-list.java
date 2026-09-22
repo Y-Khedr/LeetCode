@@ -11,43 +11,43 @@ import java.util.*;
  */
 class Solution {
     public void reorderList(ListNode head) {
-        // Using a slow and fast pointer so that the slow pointer is at the middle
         ListNode slow = head;
-        ListNode fast = head;
+        ListNode second = head;
 
-        while(fast != null && fast.next != null){
+        while(second != null && second.next != null){
             slow = slow.next;
-            fast = fast.next.next;
+            second = second.next.next;
         }
-        // Creating the second list starting from slow.next and ending slow.next from now on
-        ListNode second = slow.next;
+        second = slow.next;
         slow.next = null;
 
-        // Reversing the second linked list using the curr, prev, and temp concepts
+        // reverse the second part of the list, using a simple reverse linked list format
         ListNode curr = second;
         ListNode prev = null;
+        ListNode temp;
         while(curr != null){
-            ListNode temp = curr.next;
+            temp = curr.next;
             curr.next = prev;
             prev = curr;
             curr = temp;
         }
-        // prev now is the reversed second list, therfore second is hereby reversed
+        //the reversed second is now prev
         second = prev;
+
         ListNode first = head;
-        // Now the two lists should be merged together so that we can start by taking one fromm slow and 
+        ListNode tmp1 = null;
+        ListNode tmp2 = null;
+
         while(second != null){
-            ListNode tmp1 = first.next;
-            ListNode tmp2 = second.next;
+            tmp1 = first.next;
+            tmp2 = second.next;
 
             first.next = second;
-            second.next = tmp1; //tmp one is the first.next before bieng edited
-
-            // This is for moving both nodes to the next point, and the loop would end when second becomes null
+            second.next = tmp1;
 
             first = tmp1;
             second = tmp2;
-
         }
+
     }
 }
