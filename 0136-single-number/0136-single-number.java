@@ -10,6 +10,9 @@ class Solution {
             else
                 set.add(num);
         }
-        return set.iterator().next();
+        for(int num:set){
+            return num;
+        }
+        return -1;
     }
 }
