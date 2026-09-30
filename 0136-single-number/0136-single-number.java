@@ -2,17 +2,11 @@ import java.util.*;
 
 class Solution {
     public int singleNumber(int[] nums) {
-        Set<Integer> set = new HashSet<>();
-
+        int res=0;
         for(int num: nums){
-            if(set.contains(num))
-                set.remove(num);
-            else
-                set.add(num);
+            res^=num;
         }
-        for(int num:set){
-            return num;
-        }
-        return -1;
+        return res;
+        
     }
 }
