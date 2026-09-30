@@ -1,5 +1,4 @@
 import java.util.*;
-
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -18,17 +17,19 @@ import java.util.*;
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> list = new ArrayList<>();
-        levelHelper(root, 0, list);
-        return list;
+        helper(root, 0, list);
+        return list; 
     }
-    void levelHelper(TreeNode root, int level, List<List<Integer>> list){
-        if(root == null) return;
-        if(level == list.size())
+    public int helper(TreeNode root, int level, List<List<Integer>> list){
+        if(root == null) return 0;
+        if(level >= list.size())
             list.add(new ArrayList<>());
-        
+
         list.get(level).add(root.val);
 
-        levelHelper(root.left, level + 1, list);
-        levelHelper(root.right, level + 1, list);
+        helper(root.left, level + 1, list);
+        helper(root.right, level + 1, list);
+        
+        return level;
     }
 }
