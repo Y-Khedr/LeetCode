@@ -1,5 +1,3 @@
-import java.util.*;
-
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -18,10 +16,9 @@ import java.util.*;
 class Solution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if(p == null && q == null) return true;
-        if(q == null || p == null) return false;
-        if(q.val != p.val) return false;
+        if(p == null || q == null) return false;
+        if(p.val != q.val) return false;
 
         return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
-
     }
 }
