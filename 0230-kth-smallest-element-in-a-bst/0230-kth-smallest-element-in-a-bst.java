@@ -18,18 +18,17 @@ import java.util.*;
 class Solution {
     public int kthSmallest(TreeNode root, int k) {
         Stack<TreeNode> stack = new Stack<>();
-        TreeNode curr = root;
-        while(curr != null || !stack.isEmpty()){
+        while(root != null || !stack.isEmpty()){
 
-            while(curr != null){
-                stack.push(curr);
-                curr = curr.left;
+            while(root != null){
+                stack.push(root);
+                root = root.left;
             }
-            curr = stack.pop();
+            root = stack.pop();
             k--;
-            if(k == 0) return curr.val;
+            if(k == 0) return root.val;
 
-            curr = curr.right;
+            root = root.right;
         }
         return -1;
     }
