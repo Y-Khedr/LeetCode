@@ -7,9 +7,9 @@ class Solution {
         int left = 0, right = 1, max = 0, profit = 0;
         
         while(right < n){
-            profit = prices[right] - prices[left];
             
             if(prices[right] > prices[left]){
+                profit = prices[right] - prices[left];
                 if(profit > max)
                     max = profit;
             }
