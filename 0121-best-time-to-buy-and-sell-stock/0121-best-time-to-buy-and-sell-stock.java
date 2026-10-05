@@ -4,25 +4,20 @@ class Solution {
     public int maxProfit(int[] prices) {
         int n = prices.length;
 
-        int left = 0;
-        int right = 1;
-        int max = 0;
-        int profit;
+        int left = 0, right = 1, max = 0, profit = 0;
+        
         while(right < n){
+            profit = prices[right] - prices[left];
             
-            if(prices[left] < prices[right]){
-                profit = prices[right] - prices[left];
-                if(profit>max)
-                    max = profit;                   
-                right++;
+            if(prices[right] > prices[left]){
+                if(profit > max)
+                    max = profit;
             }
             else{
                 left = right;
-                right++;
             }
-
-        }        
+            right++;
+        }
         return max;
     }
-
 }
