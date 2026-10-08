@@ -6,8 +6,8 @@ class Solution {
         int max = 0;
         while(right < prices.length){
             if(prices[left] < prices[right]){
-                profit = prices[right] - prices[left];
-                if(profit > max) max = profit;
+                if(prices[right] - prices[left] > max)
+                    max = prices[right] - prices[left];
             }
             else
                 left = right;
