@@ -2,20 +2,16 @@ import java.util.*;
 
 class Solution {
     public int maxProfit(int[] prices) {
-        int n = prices.length;
-
-        int left = 0, right = 1, max = 0, profit = 0;
-        
-        while(right < n){
-            
-            if(prices[right] > prices[left]){
+        int left = 0, right = 1, profit = 0;
+        int max = 0;
+        while(right < prices.length){
+            if(prices[left] < prices[right]){
                 profit = prices[right] - prices[left];
-                if(profit > max)
-                    max = profit;
+                if(profit > max) max = profit;
             }
-            else{
+            else
                 left = right;
-            }
+            
             right++;
         }
         return max;
