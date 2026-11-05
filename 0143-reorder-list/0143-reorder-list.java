@@ -21,17 +21,13 @@ class Solution {
         second = slow.next;
         slow.next = null;
 
-        // reverse the second part of the list, using a simple reverse linked list format
-        ListNode curr = second;
-        ListNode prev = null;
-        ListNode temp;
+        ListNode curr = second, prev = null, temp;
         while(curr != null){
             temp = curr.next;
             curr.next = prev;
             prev = curr;
             curr = temp;
         }
-        //the reversed second is now prev
         second = prev;
 
         ListNode first = head;
